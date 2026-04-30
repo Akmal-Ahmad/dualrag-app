@@ -238,6 +238,112 @@ dualrag-app/
 
 ---
 
+## Complete Feature List
+
+### Chat Features
+
+- **Streaming Responses** - Real-time token-by-token AI response generation
+- **Non-Streaming Fallback** - Automatically handles both streaming and standard responses
+- **Regenerate Responses** - One-click regeneration of AI responses with same context
+- **Copy to Clipboard** - Copy any AI response with a single click
+- **Markdown Rendering** - Full support for headers, bold, italic, code blocks, lists, and more
+- **Source Attribution** - Visual display of which documents contributed to each response
+- **Error Handling** - Graceful error messages with recovery options
+- **Connection Status** - Real-time indicator showing backend connectivity
+- **Stop Generation** - Ability to cancel ongoing AI responses mid-stream
+
+---
+
+### Document Management
+
+- **Multi-format Upload** - Support for PDF, TXT, DOCX, MD, CSV, JSON, PNG, JPG
+- **Batch Upload** - Upload multiple files simultaneously
+- **Upload Progress** - Visual progress bar during document upload
+- **Document List** - View all indexed documents in dropdown panel
+- **Remove Individual Documents** - Delete specific documents from the index
+- **Remove All Documents** - Bulk delete with confirmation dialog
+- **Refresh Documents** - Manually refresh document list from backend
+- **Document Count** - Live counter showing number of indexed documents
+
+---
+
+### Chat History
+
+- **Persistent Storage** - All conversations saved to localStorage
+- **Multiple Conversations** - Create and switch between different chat sessions
+- **Auto-titling** - Conversations automatically titled from first message
+- **Active Chat Indicator** - Visual highlight showing current conversation
+- **Delete Individual Chats** - Remove specific conversations
+- **Clear All Data** - Wipe all conversations and settings
+- **Message Persistence** - Chat messages survive page reloads
+- **Empty State** - Friendly message when no conversations exist
+- **Auto-scroll** - Automatically scrolls to latest messages
+
+---
+
+### Keyboard Shortcuts
+
+| Shortcut       | Action                         |
+| -------------- | ------------------------------ |
+| `Ctrl/Cmd + N` | New conversation               |
+| `Ctrl/Cmd + ,` | Open settings                  |
+| `Enter`        | Send message                   |
+| `Escape`       | Stop generation / Close modals |
+
+---
+
+### Settings & Configuration
+
+- **API URL Configuration** - Change backend server address
+- **API Key Support** - Add authentication keys (Bearer token / X-API-Key)
+- **Model Selection** - Specify which AI model to use if backend supports multiple
+- **Test Connection** - Verify backend connectivity from settings
+- **Persistent Settings** - Settings saved to localStorage
+- **Connection Monitoring** - Automatic periodic health checks (every 30s)
+
+---
+
+### Data & Privacy
+
+- **Client-side Storage** - All data stays in browser localStorage
+- **No External Tracking** - No analytics, no cookies, no tracking
+- **API Key Masking** - Password field for API key input
+- **Confirmation Dialogs** - Delete operations require confirmation
+
+---
+
+### Performance
+
+- **Virtual Scrolling** - Load older messages on scroll for large chats
+- **Pagination** - Messages loaded in pages (20 per page)
+- **Lazy Loading** - Progressive loading of chat history
+- **Optimized DOM Updates** - Fragment-based DOM manipulation
+- **Efficient Rendering** - Markdown rendered client-side
+
+---
+
+### Developer Features
+
+- **Hot Module Replacement** - Vite dev server with HMR
+- **ES Modules** - Modern JavaScript module system
+- **No Dependencies** - Zero production JavaScript dependencies
+- **CORS Ready** - Works with any CORS-enabled backend
+- **Streaming Support** - Server-Sent Events (SSE) support
+- **Abort Controller** - Request cancellation support
+- **Error State Handling** - Comprehensive try-catch blocks
+- **Environment Agnostic** - Works with any RAG backend
+
+---
+
+### Error Handling
+
+- **Connection Errors** - Clear message when backend unreachable
+- **Upload Failures** - Per-file error reporting
+- **Query Failures** - Graceful fallback with error display
+- **Network Timeout** - 3-second timeout for health checks
+- **JSON Parse Errors** - Safe parsing with fallbacks
+- **DOM Error Recovery** - Fallback message elements on render failure
+
 ## License
 
 MIT
